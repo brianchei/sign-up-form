@@ -1,0 +1,86 @@
+<!--
+Structure
+
+div content
+    div image-container
+        header
+        img
+        p caption
+        p bible-verse
+        p credit
+    form
+        header
+        input(text) first-name
+        input(text) last-name
+        input(email) email
+        input(tel) phone
+        input(pass) password
+        input(pass) confirm password
+        button subscribe
+        p login
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <div class="image-container">
+            <div class="top">
+                <h1>Daily Bread</h1>
+                <div class="bible-verse">
+                    <p class="bible-verse">When I look at your heavens, the work of your fingers, the moon and the stars, which you have set in place, what is man that you are mindful of him, and the son of man that you care for him?</p>
+                    <p class="bible-verse"><strong>Psalm 8:3-4</strong></p>
+                </div>
+            </div>
+            <img src="images/evgeni-tcherkasski-WXjHCVAps-I-unsplash.jpg" alt="starry night sky" width="4016" height="5824">
+            <div class="bottom">
+                <h1 class="caption">Sign up to receive daily Bible verses!</h1>
+                <p class="credit">Photo by <a href="https://unsplash.com/@evgenit?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Evgeni Tcherkasski</a> on <a href="https://unsplash.com/photos/the-milky-way-shines-above-the-calm-ocean-WXjHCVAps-I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+            </div>
+        </div>
+        <form action="" method="post">
+            <h1>Receive the Word</h1>
+            <div class="form-control">
+                <label for="first-name"></label>
+                <input type="text" name="first-name" id="first-name" required>
+                <span>FIRST NAME</span>
+            </div>
+            <div class="form-control">
+                <label for="last-name"></label>
+                <input type="text" name="last-name" id="last-name" required>
+                <span>LAST NAME</span>
+            </div>
+            <div class="form-control">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" required>
+                <span>E-MAIL</span>
+            </div>
+            <div class="form-control">
+                <label for="tel"></label>
+                <input type="tel" name="tel" id="tel" required>
+                <span>PHONE</span>
+            </div>
+            <div class="form-control">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" required>
+                <span>PASSWORD</span>
+            </div>
+            <div class="form-control">
+                <label for="confirm-password"></label>
+                <input type="password" name="confirm-password" id="confirm-password" required>
+                <span>CONFIRM PASSWORD</span>
+            </div>
+            <div class="form-control">
+                <button class="submit">Subscribe</button>
+            </div>
+            <p class="login-q">Already have an account? <span class="login">LOG-IN</span></p>
+        </form>
+    </div>
+</body>
+</html>
